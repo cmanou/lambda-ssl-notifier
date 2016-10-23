@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "lambda-ssl-notifier-executor",
+    "name": "lambda-ssl-notifier",
+    "region": "us-east-1"
+  }
+}

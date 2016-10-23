@@ -1,0 +1,23 @@
+{
+  "name": "lambda-ssl-notifier",
+  "version": "0.1.0",
+  "description": "SSL Notifier to Slack on AWS Lambda",
+  "files": [
+    "main.js"
+  ],
+  "scripts": {
+    "create": "claudia create --region us-east-1 --handler main.handler",
+    "test": "claudia test-lambda --event event.json",
+    "schedule": "claudia add-scheduled-event --event event.json --name ssl-alerts --rate '7 days'",
+    "deploy": "claudia update"
+  },
+  "author": "Christopher Manouvrier",
+  "license": "MIT",
+  "devDependencies": {
+    "claudia": "^2.1.0"
+  },
+  "dependencies": {
+    "@slack/client": "^3.6.0",
+    "moment": "^2.15.1"
+  }
+}

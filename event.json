@@ -1,0 +1,7 @@
+{
+  "urls": [
+    "www.example.com",
+    "www.github.com"
+  ],
+  "slack_webhook_url": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX"
+}
